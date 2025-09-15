@@ -3,6 +3,7 @@ import { InventarioProvider } from './context/InventarioContext';
 import Dashboard from './components/Dashboard';
 import ListaProductos from './components/ListaProductos';
 import FormularioProducto from './components/FormularioProducto';
+import Reportes from './components/Reportes';
 
 function App() {
   const [vistaActual, setVistaActual] = useState('dashboard');
@@ -15,6 +16,8 @@ function App() {
         return <ListaProductos />;
       case 'agregar':
         return <FormularioProducto onExito={() => setVistaActual('lista')} />;
+      case 'reportes':
+        return <Reportes />;
       default:
         return <Dashboard />;
     }
@@ -53,6 +56,12 @@ function App() {
               onClick={() => setVistaActual('agregar')}
             >
               ➕ Agregar Producto
+            </button>
+            <button
+              className={`nav-boton ${vistaActual === 'reportes' ? 'activo' : ''}`}
+              onClick={() => setVistaActual('reportes')}
+            >
+              📈 Reportes
             </button>
           </div>
         </nav>
