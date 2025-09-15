@@ -1,12 +1,87 @@
-# React + Vite
+# 📦 Sistema de Inventario
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![CI/CD Pipeline](https://github.com/programmer15424/sistema_inventario/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/programmer15424/sistema_inventario/actions/workflows/ci-cd.yml)
+[![Development Workflow](https://github.com/programmer15424/sistema_inventario/actions/workflows/development.yml/badge.svg)](https://github.com/programmer15424/sistema_inventario/actions/workflows/development.yml)
 
-Currently, two official plugins are available:
+Sistema web moderno para gestión de inventarios desarrollado con React + Vite, implementando GitFlow y CI/CD.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo en vivo
+**[Ver aplicación desplegada](https://programmer15424.github.io/sistema_inventario/)**
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **📊 Dashboard**: Panel de control con estadísticas del inventario
+- **📋 Gestión de Productos**: Agregar, editar, eliminar y visualizar productos
+- **🔍 Filtros**: Búsqueda por nombre y categorización
+- **📈 Reportes**: Estadísticas avanzadas y alertas de stock bajo
+- **💾 Persistencia**: Almacenamiento local con localStorage
+- **📱 Responsive**: Diseño adaptable a diferentes dispositivos
+
+## 🛠️ Tecnologías
+
+- **Frontend**: React 19.1.1, Vite 7.1.2
+- **Estilos**: CSS3 personalizado
+- **Control de versiones**: Git + GitFlow
+- **CI/CD**: GitHub Actions
+- **Despliegue**: GitHub Pages
+
+## 🔄 CI/CD Pipeline
+
+### Integración Continua
+- ✅ Linting automático con ESLint
+- 🏗️ Build automático en múltiples versiones de Node.js
+- 📦 Generación de artefactos de build
+- 🧪 Ejecución en cada push y pull request
+
+### Despliegue Continuo
+- 🚀 Despliegue automático a GitHub Pages desde rama `main`
+- 🔄 Actualización automática del sitio en producción
+- 📊 Monitoreo de estado con badges
+
+## 🌱 GitFlow Implementado
+
+- **main**: Rama de producción estable
+- **develop**: Rama principal de desarrollo
+- **feature/***: Ramas para nuevas funcionalidades
+- **release/***: Ramas para preparación de versiones
+- **hotfix/***: Ramas para correcciones urgentes
+
+## 🚀 Instalación y Uso
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/programmer15424/sistema_inventario.git
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
+npm run dev
+
+# Build para producción
+npm run build
+
+# Previsualizar build
+npm run preview
+
+# Linting
+npm run lint
+```
+
+## 📝 Convenciones de Commits
+
+- `feat:` Nueva funcionalidad
+- `fix:` Corrección de bugs
+- `docs:` Documentación
+- `style:` Cambios de formato
+- `refactor:` Refactorización
+- `chore:` Tareas de mantenimiento
+
+## 🏷️ Versiones
+
+- **v1.1.0**: Módulo de reportes y CI/CD
+- **v1.0.0**: Versión inicial del sistema
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT.
