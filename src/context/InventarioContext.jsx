@@ -18,7 +18,7 @@ const productosIniciales = [
     cantidad: 15,
     precio: 2799.90,
     descripcion: 'Laptop HP Pavilion 15.6" Intel Core i5',
-    fechaIngreso: '2024-01-15'
+    fechaIngreso: '2025-01-15'
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const productosIniciales = [
     cantidad: 45,
     precio: 89.90,
     descripcion: 'Mouse inalámbrico ergonómico con receptor USB',
-    fechaIngreso: '2024-02-10'
+    fechaIngreso: '2025-02-10'
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const productosIniciales = [
     cantidad: 28,
     precio: 249.90,
     descripcion: 'Teclado mecánico RGB con switches azules',
-    fechaIngreso: '2024-01-20'
+    fechaIngreso: '2025-01-20'
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const productosIniciales = [
     cantidad: 12,
     precio: 599.90,
     descripcion: 'Monitor LED 24" Full HD 1920x1080',
-    fechaIngreso: '2024-02-05'
+    fechaIngreso: '2025-02-05'
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const productosIniciales = [
     cantidad: 8,
     precio: 459.90,
     descripcion: 'Silla ergonómica de oficina con soporte lumbar',
-    fechaIngreso: '2024-01-25'
+    fechaIngreso: '2025-01-25'
   }
 ];
 
