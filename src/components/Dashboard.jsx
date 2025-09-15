@@ -17,7 +17,7 @@ const Dashboard = () => {
         style: 'currency',
         currency: 'PEN'
       }).format(precio);
-    } catch (error) {
+    } catch {
       return `S/ ${precio.toFixed(2)}`;
     }
   };
