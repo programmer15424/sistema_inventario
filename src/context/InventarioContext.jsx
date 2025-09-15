@@ -1,15 +1,7 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 import { productosIniciales } from '../data/productosIniciales.js';
 
-const InventarioContext = createContext();
-
-export const useInventario = () => {
-  const context = useContext(InventarioContext);
-  if (!context) {
-    throw new Error('useInventario debe usarse dentro de un InventarioProvider');
-  }
-  return context;
-};
+export const InventarioContext = createContext();
 
 export const InventarioProvider = ({ children }) => {
   const [productos, setProductos] = useState([]);
