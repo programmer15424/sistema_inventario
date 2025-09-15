@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useInventario } from '../context/InventarioContext';
+import { useInventario } from '../hooks/useInventario';
 import FormularioProducto from './FormularioProducto';
 
 const ListaProductos = () => {
@@ -60,7 +60,7 @@ const ListaProductos = () => {
         style: 'currency',
         currency: 'PEN'
       }).format(precio);
-    } catch (error) {
+    } catch {
       return `S/ ${precio.toFixed(2)}`;
     }
   };

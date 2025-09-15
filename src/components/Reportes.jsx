@@ -1,4 +1,4 @@
-import { useInventario } from '../context/InventarioContext';
+import { useInventario } from '../hooks/useInventario';
 
 const Reportes = () => {
   const { productos } = useInventario();

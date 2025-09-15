@@ -1,4 +1,4 @@
-import { useInventario } from '../context/InventarioContext';
+import { useInventario } from '../hooks/useInventario';
 
 const Dashboard = () => {
   const { productos, obtenerProductosPorCategoria } = useInventario();
@@ -17,7 +17,7 @@ const Dashboard = () => {
         style: 'currency',
         currency: 'PEN'
       }).format(precio);
-    } catch (error) {
+    } catch {
       return `S/ ${precio.toFixed(2)}`;
     }
   };

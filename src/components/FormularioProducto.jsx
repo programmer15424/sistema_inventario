@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useInventario } from '../context/InventarioContext';
+import { useInventario } from '../hooks/useInventario';
 
 const FormularioProducto = ({ productoAEditar, onCancelar, onExito }) => {
   const { agregarProducto, editarProducto } = useInventario();
