@@ -1,7 +1,6 @@
-import { createContext, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { InventarioContext } from './inventarioContext.js';
 import { productosIniciales } from '../data/productosIniciales.js';
-
-export const InventarioContext = createContext();
 
 export const InventarioProvider = ({ children }) => {
   const [productos, setProductos] = useState([]);
